@@ -1,0 +1,31 @@
+button {
+    display: inline;
+    margin-top: 0;
+    margin-right: 14px ;
+    background-color:darkseagreen;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    color:ivory;
+    padding: 5px 5px;
+}
+h2, #buttonGroup {
+    background-color:darkslateblue;
+    color: whitesmoke;
+    margin-bottom: 0;
+    padding: 1%;
+}
+
+#syntax {
+    font-family:sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: lightgray;
+}
+#C, #R, #E, #P, #T {
+    display: none;
+    stroke-width:5;
+    fill:indigo;
+    opacity:50%;
+}
