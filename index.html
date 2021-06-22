@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="svg.css">
+    <script src="svg.js"></script>
+    <title>My SVG</title>
+</head>
+<body>
+    <h2>My SVG</h2>
+    <div id="buttonGroup">
+        <button type="button" onclick="Circle()">Draw a circle using &lsaquo;svg&rsaquo;</button>
+        <button type="button" onclick="Rect()">Draw a rectangle using &lsaquo;svg&rsaquo;</button>
+        <button type="button" onclick="Ellipse()">Draw an ellipse  using &lsaquo;svg&rsaquo;</button>
+        <button type="button" onclick="Polygon()">Draw a polygon using &lsaquo;svg&rsaquo;</button>
+        <button type="button" onclick="Curve()">Draw a curve using &lsaquo;svg&rsaquo;</button>
+        <button type="button" onclick="Char()">Draw a text using &lsaquo;svg&rsaquo;</button>
+    </div>
+    <p id="syntax"></p>
+    <div>
+        <svg x="500" y="200" width="750" height="420">
+            <circle cx="600" cy="200" r="110" stroke="cyan" id="C"/>
+            <rect x="500" y ="140" rx="10" ry="10" width="200" height="120" stroke="yellow" id="R"/>
+            <ellipse cx="600" cy="200" rx="110" ry="50" stroke="tomato" id="E"/>
+            <polygon points="600,100 540,278 690,158 510,158 660,278" stroke="red" fill-rule="evenodd" id="P"/>
+            <path d="M 490 220 q 110 -270 220 0" stroke="darkgreen" stroke-width="5" fill="none" display="none" id="V"/>
+            <text x="500" y="140" transform="rotate(45 500,200)" id="T">This is my SVG</text>
+        </svg>
+    </div>
+
+</body>
+</html>
